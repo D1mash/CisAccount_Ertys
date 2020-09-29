@@ -30,7 +30,11 @@
         {
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.xtraScrollableControl1 = new DevExpress.XtraEditors.XtraScrollableControl();
+            this.checkEdit10 = new DevExpress.XtraEditors.CheckEdit();
             this.groupControl7 = new DevExpress.XtraEditors.GroupControl();
+            this.checkEdit32 = new DevExpress.XtraEditors.CheckEdit();
+            this.dateTimePicker7 = new System.Windows.Forms.DateTimePicker();
+            this.labelControl32 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit31 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit30 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit29 = new DevExpress.XtraEditors.CheckEdit();
@@ -52,6 +56,7 @@
             this.labelControl33 = new DevExpress.XtraEditors.LabelControl();
             this.dateTimePicker9 = new System.Windows.Forms.DateTimePicker();
             this.labelControl34 = new DevExpress.XtraEditors.LabelControl();
+            this.checkEdit9 = new DevExpress.XtraEditors.CheckEdit();
             this.groupControl5 = new DevExpress.XtraEditors.GroupControl();
             this.textEdit12 = new DevExpress.XtraEditors.TextEdit();
             this.checkEdit23 = new DevExpress.XtraEditors.CheckEdit();
@@ -92,36 +97,34 @@
             this.checkEdit17 = new DevExpress.XtraEditors.CheckEdit();
             this.textEdit18 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl20 = new DevExpress.XtraEditors.LabelControl();
+            this.checkEdit8 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.checkEdit10 = new DevExpress.XtraEditors.CheckEdit();
-            this.checkEdit9 = new DevExpress.XtraEditors.CheckEdit();
-            this.checkEdit8 = new DevExpress.XtraEditors.CheckEdit();
-            this.checkEdit7 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit6 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit5 = new DevExpress.XtraEditors.CheckEdit();
             this.checkEdit4 = new DevExpress.XtraEditors.CheckEdit();
-            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
-            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit8 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
+            this.checkEdit7 = new DevExpress.XtraEditors.CheckEdit();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit9 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit11 = new DevExpress.XtraEditors.CheckEdit();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
+            this.textEdit11 = new DevExpress.XtraEditors.TextEdit();
             this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
+            this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit10 = new DevExpress.XtraEditors.TextEdit();
             this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
             this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -152,8 +155,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             this.xtraScrollableControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).BeginInit();
             this.groupControl7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit32.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit31.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit30.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit29.Properties)).BeginInit();
@@ -161,6 +166,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit27.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit26.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit25.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).BeginInit();
             this.groupControl5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit12.Properties)).BeginInit();
@@ -189,25 +195,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit17.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit9.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit8.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit6.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit5.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit7.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
@@ -236,17 +240,26 @@
             // 
             // xtraScrollableControl1
             // 
+            this.xtraScrollableControl1.Controls.Add(this.checkEdit10);
             this.xtraScrollableControl1.Controls.Add(this.groupControl7);
+            this.xtraScrollableControl1.Controls.Add(this.checkEdit9);
             this.xtraScrollableControl1.Controls.Add(this.groupControl5);
+            this.xtraScrollableControl1.Controls.Add(this.checkEdit8);
             this.xtraScrollableControl1.Controls.Add(this.labelControl1);
             this.xtraScrollableControl1.Controls.Add(this.groupControl3);
             this.xtraScrollableControl1.Controls.Add(this.checkEdit11);
             this.xtraScrollableControl1.Controls.Add(this.simpleButton1);
             this.xtraScrollableControl1.Controls.Add(this.textEdit1);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl5);
             this.xtraScrollableControl1.Controls.Add(this.labelControl7);
+            this.xtraScrollableControl1.Controls.Add(this.textEdit5);
+            this.xtraScrollableControl1.Controls.Add(this.textEdit11);
             this.xtraScrollableControl1.Controls.Add(this.checkEdit2);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl13);
             this.xtraScrollableControl1.Controls.Add(this.comboBox1);
+            this.xtraScrollableControl1.Controls.Add(this.labelControl12);
             this.xtraScrollableControl1.Controls.Add(this.labelControl2);
+            this.xtraScrollableControl1.Controls.Add(this.textEdit10);
             this.xtraScrollableControl1.Controls.Add(this.labelControl6);
             this.xtraScrollableControl1.Controls.Add(this.checkEdit1);
             this.xtraScrollableControl1.Controls.Add(this.comboBox2);
@@ -265,8 +278,21 @@
             this.xtraScrollableControl1.Size = new System.Drawing.Size(342, 791);
             this.xtraScrollableControl1.TabIndex = 0;
             // 
+            // checkEdit10
+            // 
+            this.checkEdit10.Location = new System.Drawing.Point(7, 753);
+            this.checkEdit10.Name = "checkEdit10";
+            this.checkEdit10.Properties.Caption = "";
+            this.checkEdit10.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit10_Properties_CheckStateChanged);
+            this.checkEdit10.Size = new System.Drawing.Size(16, 19);
+            this.checkEdit10.TabIndex = 35;
+            this.checkEdit10.Visible = false;
+            // 
             // groupControl7
             // 
+            this.groupControl7.Controls.Add(this.checkEdit32);
+            this.groupControl7.Controls.Add(this.dateTimePicker7);
+            this.groupControl7.Controls.Add(this.labelControl32);
             this.groupControl7.Controls.Add(this.checkEdit31);
             this.groupControl7.Controls.Add(this.checkEdit30);
             this.groupControl7.Controls.Add(this.checkEdit29);
@@ -288,11 +314,38 @@
             this.groupControl7.Controls.Add(this.labelControl33);
             this.groupControl7.Controls.Add(this.dateTimePicker9);
             this.groupControl7.Controls.Add(this.labelControl34);
-            this.groupControl7.Location = new System.Drawing.Point(8, 306);
+            this.groupControl7.Location = new System.Drawing.Point(8, 266);
             this.groupControl7.Name = "groupControl7";
-            this.groupControl7.Size = new System.Drawing.Size(328, 211);
+            this.groupControl7.Size = new System.Drawing.Size(328, 237);
             this.groupControl7.TabIndex = 38;
             this.groupControl7.Text = "Даты и Время";
+            // 
+            // checkEdit32
+            // 
+            this.checkEdit32.Location = new System.Drawing.Point(3, 209);
+            this.checkEdit32.Name = "checkEdit32";
+            this.checkEdit32.Properties.Caption = "";
+            this.checkEdit32.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit32_Properties_CheckStateChanged);
+            this.checkEdit32.Size = new System.Drawing.Size(16, 19);
+            this.checkEdit32.TabIndex = 45;
+            this.checkEdit32.Visible = false;
+            // 
+            // dateTimePicker7
+            // 
+            this.dateTimePicker7.CustomFormat = "dd.MM.yyyy HH:mm:ss";
+            this.dateTimePicker7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker7.Location = new System.Drawing.Point(160, 212);
+            this.dateTimePicker7.Name = "dateTimePicker7";
+            this.dateTimePicker7.Size = new System.Drawing.Size(142, 21);
+            this.dateTimePicker7.TabIndex = 44;
+            // 
+            // labelControl32
+            // 
+            this.labelControl32.Location = new System.Drawing.Point(24, 212);
+            this.labelControl32.Name = "labelControl32";
+            this.labelControl32.Size = new System.Drawing.Size(97, 13);
+            this.labelControl32.TabIndex = 43;
+            this.labelControl32.Text = "Дата уборки с ППС";
             // 
             // checkEdit31
             // 
@@ -483,6 +536,16 @@
             this.labelControl34.TabIndex = 0;
             this.labelControl34.Text = "Начало обработки";
             // 
+            // checkEdit9
+            // 
+            this.checkEdit9.Location = new System.Drawing.Point(12, 727);
+            this.checkEdit9.Name = "checkEdit9";
+            this.checkEdit9.Properties.Caption = "";
+            this.checkEdit9.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit9_Properties_CheckStateChanged);
+            this.checkEdit9.Size = new System.Drawing.Size(16, 19);
+            this.checkEdit9.TabIndex = 34;
+            this.checkEdit9.Visible = false;
+            // 
             // groupControl5
             // 
             this.groupControl5.Controls.Add(this.textEdit12);
@@ -524,7 +587,7 @@
             this.groupControl5.Controls.Add(this.checkEdit17);
             this.groupControl5.Controls.Add(this.textEdit18);
             this.groupControl5.Controls.Add(this.labelControl20);
-            this.groupControl5.Location = new System.Drawing.Point(8, 745);
+            this.groupControl5.Location = new System.Drawing.Point(8, 657);
             this.groupControl5.Name = "groupControl5";
             this.groupControl5.Size = new System.Drawing.Size(328, 36);
             this.groupControl5.TabIndex = 36;
@@ -983,6 +1046,16 @@
             this.labelControl20.TabIndex = 15;
             this.labelControl20.Text = "Пригодность";
             // 
+            // checkEdit8
+            // 
+            this.checkEdit8.Location = new System.Drawing.Point(11, 700);
+            this.checkEdit8.Name = "checkEdit8";
+            this.checkEdit8.Properties.Caption = "";
+            this.checkEdit8.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit8_Properties_CheckStateChanged);
+            this.checkEdit8.Size = new System.Drawing.Size(16, 19);
+            this.checkEdit8.TabIndex = 33;
+            this.checkEdit8.Visible = false;
+            // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -995,76 +1068,27 @@
             // 
             // groupControl3
             // 
-            this.groupControl3.Controls.Add(this.checkEdit10);
-            this.groupControl3.Controls.Add(this.checkEdit9);
-            this.groupControl3.Controls.Add(this.checkEdit8);
-            this.groupControl3.Controls.Add(this.checkEdit7);
             this.groupControl3.Controls.Add(this.checkEdit6);
             this.groupControl3.Controls.Add(this.checkEdit5);
             this.groupControl3.Controls.Add(this.checkEdit4);
-            this.groupControl3.Controls.Add(this.labelControl5);
-            this.groupControl3.Controls.Add(this.textEdit5);
-            this.groupControl3.Controls.Add(this.textEdit11);
-            this.groupControl3.Controls.Add(this.labelControl13);
-            this.groupControl3.Controls.Add(this.labelControl12);
-            this.groupControl3.Controls.Add(this.textEdit10);
-            this.groupControl3.Controls.Add(this.textEdit9);
-            this.groupControl3.Controls.Add(this.labelControl11);
             this.groupControl3.Controls.Add(this.textEdit8);
             this.groupControl3.Controls.Add(this.labelControl10);
             this.groupControl3.Controls.Add(this.textEdit7);
+            this.groupControl3.Controls.Add(this.checkEdit7);
             this.groupControl3.Controls.Add(this.labelControl9);
             this.groupControl3.Controls.Add(this.textEdit6);
             this.groupControl3.Controls.Add(this.labelControl8);
+            this.groupControl3.Controls.Add(this.textEdit9);
+            this.groupControl3.Controls.Add(this.labelControl11);
             this.groupControl3.Location = new System.Drawing.Point(8, 171);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(328, 129);
+            this.groupControl3.Size = new System.Drawing.Size(328, 89);
             this.groupControl3.TabIndex = 14;
             this.groupControl3.Text = "Обработка";
             // 
-            // checkEdit10
-            // 
-            this.checkEdit10.Location = new System.Drawing.Point(61, 102);
-            this.checkEdit10.Name = "checkEdit10";
-            this.checkEdit10.Properties.Caption = "";
-            this.checkEdit10.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit10_Properties_CheckStateChanged);
-            this.checkEdit10.Size = new System.Drawing.Size(16, 19);
-            this.checkEdit10.TabIndex = 35;
-            this.checkEdit10.Visible = false;
-            // 
-            // checkEdit9
-            // 
-            this.checkEdit9.Location = new System.Drawing.Point(140, 76);
-            this.checkEdit9.Name = "checkEdit9";
-            this.checkEdit9.Properties.Caption = "";
-            this.checkEdit9.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit9_Properties_CheckStateChanged);
-            this.checkEdit9.Size = new System.Drawing.Size(16, 19);
-            this.checkEdit9.TabIndex = 34;
-            this.checkEdit9.Visible = false;
-            // 
-            // checkEdit8
-            // 
-            this.checkEdit8.Location = new System.Drawing.Point(139, 49);
-            this.checkEdit8.Name = "checkEdit8";
-            this.checkEdit8.Properties.Caption = "";
-            this.checkEdit8.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit8_Properties_CheckStateChanged);
-            this.checkEdit8.Size = new System.Drawing.Size(16, 19);
-            this.checkEdit8.TabIndex = 33;
-            this.checkEdit8.Visible = false;
-            // 
-            // checkEdit7
-            // 
-            this.checkEdit7.Location = new System.Drawing.Point(139, 23);
-            this.checkEdit7.Name = "checkEdit7";
-            this.checkEdit7.Properties.Caption = "";
-            this.checkEdit7.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit7_Properties_CheckStateChanged);
-            this.checkEdit7.Size = new System.Drawing.Size(16, 19);
-            this.checkEdit7.TabIndex = 32;
-            this.checkEdit7.Visible = false;
-            // 
             // checkEdit6
             // 
-            this.checkEdit6.Location = new System.Drawing.Point(3, 48);
+            this.checkEdit6.Location = new System.Drawing.Point(178, 48);
             this.checkEdit6.Name = "checkEdit6";
             this.checkEdit6.Properties.Caption = "";
             this.checkEdit6.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit6_Properties_CheckStateChanged);
@@ -1074,7 +1098,7 @@
             // 
             // checkEdit5
             // 
-            this.checkEdit5.Location = new System.Drawing.Point(3, 75);
+            this.checkEdit5.Location = new System.Drawing.Point(178, 23);
             this.checkEdit5.Name = "checkEdit5";
             this.checkEdit5.Properties.Caption = "";
             this.checkEdit5.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit5_Properties_CheckStateChanged);
@@ -1084,7 +1108,7 @@
             // 
             // checkEdit4
             // 
-            this.checkEdit4.Location = new System.Drawing.Point(3, 23);
+            this.checkEdit4.Location = new System.Drawing.Point(43, 24);
             this.checkEdit4.Name = "checkEdit4";
             this.checkEdit4.Properties.Caption = "";
             this.checkEdit4.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit4_Properties_CheckStateChanged);
@@ -1092,111 +1116,9 @@
             this.checkEdit4.TabIndex = 25;
             this.checkEdit4.Visible = false;
             // 
-            // labelControl5
-            // 
-            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(83, 104);
-            this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(49, 14);
-            this.labelControl5.TabIndex = 29;
-            this.labelControl5.Text = "Наружка";
-            // 
-            // textEdit5
-            // 
-            this.textEdit5.Location = new System.Drawing.Point(138, 102);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.Mask.BeepOnError = true;
-            this.textEdit5.Properties.Mask.EditMask = "\\d";
-            this.textEdit5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.textEdit5.Properties.Mask.ShowPlaceHolders = false;
-            this.textEdit5.Properties.MaxLength = 1;
-            this.textEdit5.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit5_Properties_KeyPress);
-            this.textEdit5.Size = new System.Drawing.Size(118, 20);
-            this.textEdit5.TabIndex = 28;
-            this.textEdit5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
-            this.textEdit5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit5_KeyUp);
-            // 
-            // textEdit11
-            // 
-            this.textEdit11.Location = new System.Drawing.Point(261, 76);
-            this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Properties.Mask.BeepOnError = true;
-            this.textEdit11.Properties.Mask.EditMask = "\\d";
-            this.textEdit11.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.textEdit11.Properties.Mask.ShowPlaceHolders = false;
-            this.textEdit11.Properties.MaxLength = 1;
-            this.textEdit11.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit11_Properties_KeyPress);
-            this.textEdit11.Size = new System.Drawing.Size(62, 20);
-            this.textEdit11.TabIndex = 27;
-            this.textEdit11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
-            this.textEdit11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit11_KeyUp);
-            // 
-            // labelControl13
-            // 
-            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl13.Appearance.Options.UseFont = true;
-            this.labelControl13.Location = new System.Drawing.Point(160, 78);
-            this.labelControl13.Name = "labelControl13";
-            this.labelControl13.Size = new System.Drawing.Size(57, 14);
-            this.labelControl13.TabIndex = 26;
-            this.labelControl13.Text = "Трафарет";
-            // 
-            // labelControl12
-            // 
-            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl12.Appearance.Options.UseFont = true;
-            this.labelControl12.Location = new System.Drawing.Point(160, 51);
-            this.labelControl12.Name = "labelControl12";
-            this.labelControl12.Size = new System.Drawing.Size(91, 14);
-            this.labelControl12.TabIndex = 25;
-            this.labelControl12.Text = "ДР без наружки";
-            // 
-            // textEdit10
-            // 
-            this.textEdit10.Location = new System.Drawing.Point(261, 49);
-            this.textEdit10.Name = "textEdit10";
-            this.textEdit10.Properties.Mask.BeepOnError = true;
-            this.textEdit10.Properties.Mask.EditMask = "\\d";
-            this.textEdit10.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.textEdit10.Properties.Mask.ShowPlaceHolders = false;
-            this.textEdit10.Properties.MaxLength = 1;
-            this.textEdit10.Properties.EditValueChanged += new System.EventHandler(this.textEdit10_Properties_EditValueChanged);
-            this.textEdit10.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit10_Properties_KeyPress);
-            this.textEdit10.Size = new System.Drawing.Size(62, 20);
-            this.textEdit10.TabIndex = 24;
-            this.textEdit10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
-            this.textEdit10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit10_KeyUp);
-            // 
-            // textEdit9
-            // 
-            this.textEdit9.Location = new System.Drawing.Point(261, 23);
-            this.textEdit9.Name = "textEdit9";
-            this.textEdit9.Properties.Mask.BeepOnError = true;
-            this.textEdit9.Properties.Mask.EditMask = "\\d";
-            this.textEdit9.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
-            this.textEdit9.Properties.Mask.ShowPlaceHolders = false;
-            this.textEdit9.Properties.MaxLength = 1;
-            this.textEdit9.Properties.EditValueChanged += new System.EventHandler(this.textEdit9_Properties_EditValueChanged);
-            this.textEdit9.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit9_Properties_KeyPress);
-            this.textEdit9.Size = new System.Drawing.Size(62, 20);
-            this.textEdit9.TabIndex = 22;
-            this.textEdit9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
-            this.textEdit9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit9_KeyUp);
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(160, 25);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(85, 14);
-            this.labelControl11.TabIndex = 21;
-            this.labelControl11.Text = "ДР с наружкой";
-            // 
             // textEdit8
             // 
-            this.textEdit8.Location = new System.Drawing.Point(52, 75);
+            this.textEdit8.Location = new System.Drawing.Point(227, 23);
             this.textEdit8.Name = "textEdit8";
             this.textEdit8.Properties.Mask.BeepOnError = true;
             this.textEdit8.Properties.Mask.EditMask = "\\d";
@@ -1214,7 +1136,7 @@
             // 
             this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(24, 77);
+            this.labelControl10.Location = new System.Drawing.Point(199, 25);
             this.labelControl10.Name = "labelControl10";
             this.labelControl10.Size = new System.Drawing.Size(22, 14);
             this.labelControl10.TabIndex = 19;
@@ -1222,7 +1144,7 @@
             // 
             // textEdit7
             // 
-            this.textEdit7.Location = new System.Drawing.Point(52, 49);
+            this.textEdit7.Location = new System.Drawing.Point(227, 49);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.Mask.BeepOnError = true;
             this.textEdit7.Properties.Mask.EditMask = "\\d";
@@ -1236,11 +1158,21 @@
             this.textEdit7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
             this.textEdit7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit7_KeyUp);
             // 
+            // checkEdit7
+            // 
+            this.checkEdit7.Location = new System.Drawing.Point(43, 49);
+            this.checkEdit7.Name = "checkEdit7";
+            this.checkEdit7.Properties.Caption = "";
+            this.checkEdit7.Properties.CheckStateChanged += new System.EventHandler(this.checkEdit7_Properties_CheckStateChanged);
+            this.checkEdit7.Size = new System.Drawing.Size(16, 19);
+            this.checkEdit7.TabIndex = 32;
+            this.checkEdit7.Visible = false;
+            // 
             // labelControl9
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(22, 50);
+            this.labelControl9.Location = new System.Drawing.Point(197, 50);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(24, 14);
             this.labelControl9.TabIndex = 17;
@@ -1248,7 +1180,7 @@
             // 
             // textEdit6
             // 
-            this.textEdit6.Location = new System.Drawing.Point(52, 23);
+            this.textEdit6.Location = new System.Drawing.Point(104, 24);
             this.textEdit6.Name = "textEdit6";
             this.textEdit6.Properties.Mask.BeepOnError = true;
             this.textEdit6.Properties.Mask.EditMask = "\\d";
@@ -1257,7 +1189,7 @@
             this.textEdit6.Properties.MaxLength = 1;
             this.textEdit6.Properties.EditValueChanged += new System.EventHandler(this.textEdit6_Properties_EditValueChanged);
             this.textEdit6.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit6_Properties_KeyPress);
-            this.textEdit6.Size = new System.Drawing.Size(48, 20);
+            this.textEdit6.Size = new System.Drawing.Size(62, 20);
             this.textEdit6.TabIndex = 16;
             this.textEdit6.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
             this.textEdit6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit6_KeyUp);
@@ -1266,11 +1198,37 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(22, 25);
+            this.labelControl8.Location = new System.Drawing.Point(62, 26);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(24, 14);
             this.labelControl8.TabIndex = 15;
             this.labelControl8.Text = "ХОЛ";
+            // 
+            // textEdit9
+            // 
+            this.textEdit9.Location = new System.Drawing.Point(104, 49);
+            this.textEdit9.Name = "textEdit9";
+            this.textEdit9.Properties.Mask.BeepOnError = true;
+            this.textEdit9.Properties.Mask.EditMask = "\\d";
+            this.textEdit9.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.textEdit9.Properties.Mask.ShowPlaceHolders = false;
+            this.textEdit9.Properties.MaxLength = 1;
+            this.textEdit9.Properties.EditValueChanged += new System.EventHandler(this.textEdit9_Properties_EditValueChanged);
+            this.textEdit9.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit9_Properties_KeyPress);
+            this.textEdit9.Size = new System.Drawing.Size(62, 20);
+            this.textEdit9.TabIndex = 22;
+            this.textEdit9.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
+            this.textEdit9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit9_KeyUp);
+            // 
+            // labelControl11
+            // 
+            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl11.Appearance.Options.UseFont = true;
+            this.labelControl11.Location = new System.Drawing.Point(64, 51);
+            this.labelControl11.Name = "labelControl11";
+            this.labelControl11.Size = new System.Drawing.Size(34, 14);
+            this.labelControl11.TabIndex = 21;
+            this.labelControl11.Text = "ДР/КР";
             // 
             // checkEdit11
             // 
@@ -1286,7 +1244,7 @@
             // 
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(236, 523);
+            this.simpleButton1.Location = new System.Drawing.Point(236, 508);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(100, 25);
             this.simpleButton1.TabIndex = 15;
@@ -1310,6 +1268,17 @@
             this.textEdit1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
             this.textEdit1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit1_KeyUp);
             // 
+            // labelControl5
+            // 
+            this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl5.Appearance.Options.UseFont = true;
+            this.labelControl5.Location = new System.Drawing.Point(29, 755);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(49, 14);
+            this.labelControl5.TabIndex = 29;
+            this.labelControl5.Text = "Наружка";
+            this.labelControl5.Visible = false;
+            // 
             // labelControl7
             // 
             this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -1319,6 +1288,38 @@
             this.labelControl7.Size = new System.Drawing.Size(47, 14);
             this.labelControl7.TabIndex = 12;
             this.labelControl7.Text = "Продукт";
+            // 
+            // textEdit5
+            // 
+            this.textEdit5.Location = new System.Drawing.Point(84, 753);
+            this.textEdit5.Name = "textEdit5";
+            this.textEdit5.Properties.Mask.BeepOnError = true;
+            this.textEdit5.Properties.Mask.EditMask = "\\d";
+            this.textEdit5.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.textEdit5.Properties.Mask.ShowPlaceHolders = false;
+            this.textEdit5.Properties.MaxLength = 1;
+            this.textEdit5.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit5_Properties_KeyPress);
+            this.textEdit5.Size = new System.Drawing.Size(118, 20);
+            this.textEdit5.TabIndex = 28;
+            this.textEdit5.Visible = false;
+            this.textEdit5.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
+            this.textEdit5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit5_KeyUp);
+            // 
+            // textEdit11
+            // 
+            this.textEdit11.Location = new System.Drawing.Point(133, 727);
+            this.textEdit11.Name = "textEdit11";
+            this.textEdit11.Properties.Mask.BeepOnError = true;
+            this.textEdit11.Properties.Mask.EditMask = "\\d";
+            this.textEdit11.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.textEdit11.Properties.Mask.ShowPlaceHolders = false;
+            this.textEdit11.Properties.MaxLength = 1;
+            this.textEdit11.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit11_Properties_KeyPress);
+            this.textEdit11.Size = new System.Drawing.Size(62, 20);
+            this.textEdit11.TabIndex = 27;
+            this.textEdit11.Visible = false;
+            this.textEdit11.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
+            this.textEdit11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit11_KeyUp);
             // 
             // checkEdit2
             // 
@@ -1330,6 +1331,17 @@
             this.checkEdit2.TabIndex = 23;
             this.checkEdit2.Visible = false;
             // 
+            // labelControl13
+            // 
+            this.labelControl13.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl13.Appearance.Options.UseFont = true;
+            this.labelControl13.Location = new System.Drawing.Point(32, 729);
+            this.labelControl13.Name = "labelControl13";
+            this.labelControl13.Size = new System.Drawing.Size(57, 14);
+            this.labelControl13.TabIndex = 26;
+            this.labelControl13.Text = "Трафарет";
+            this.labelControl13.Visible = false;
+            // 
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1338,6 +1350,17 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(209, 21);
             this.comboBox1.TabIndex = 16;
+            // 
+            // labelControl12
+            // 
+            this.labelControl12.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelControl12.Appearance.Options.UseFont = true;
+            this.labelControl12.Location = new System.Drawing.Point(32, 702);
+            this.labelControl12.Name = "labelControl12";
+            this.labelControl12.Size = new System.Drawing.Size(91, 14);
+            this.labelControl12.TabIndex = 25;
+            this.labelControl12.Text = "ДР без наружки";
+            this.labelControl12.Visible = false;
             // 
             // labelControl2
             // 
@@ -1348,6 +1371,23 @@
             this.labelControl2.Size = new System.Drawing.Size(73, 14);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "Собственник";
+            // 
+            // textEdit10
+            // 
+            this.textEdit10.Location = new System.Drawing.Point(133, 700);
+            this.textEdit10.Name = "textEdit10";
+            this.textEdit10.Properties.Mask.BeepOnError = true;
+            this.textEdit10.Properties.Mask.EditMask = "\\d";
+            this.textEdit10.Properties.Mask.MaskType = DevExpress.XtraEditors.Mask.MaskType.RegEx;
+            this.textEdit10.Properties.Mask.ShowPlaceHolders = false;
+            this.textEdit10.Properties.MaxLength = 1;
+            this.textEdit10.Properties.EditValueChanged += new System.EventHandler(this.textEdit10_Properties_EditValueChanged);
+            this.textEdit10.Properties.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textEdit10_Properties_KeyPress);
+            this.textEdit10.Size = new System.Drawing.Size(62, 20);
+            this.textEdit10.TabIndex = 24;
+            this.textEdit10.Visible = false;
+            this.textEdit10.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Enter_Key_Down);
+            this.textEdit10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textEdit10_KeyUp);
             // 
             // labelControl6
             // 
@@ -1415,7 +1455,7 @@
             // 
             this.simpleButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.Location = new System.Drawing.Point(8, 523);
+            this.simpleButton7.Location = new System.Drawing.Point(8, 508);
             this.simpleButton7.Name = "simpleButton7";
             this.simpleButton7.Size = new System.Drawing.Size(100, 25);
             this.simpleButton7.TabIndex = 18;
@@ -1444,7 +1484,7 @@
             // 
             // memoEdit1
             // 
-            this.memoEdit1.Location = new System.Drawing.Point(8, 597);
+            this.memoEdit1.Location = new System.Drawing.Point(8, 582);
             this.memoEdit1.Name = "memoEdit1";
             this.memoEdit1.Properties.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.memoEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -1458,7 +1498,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(8, 554);
+            this.panel1.Location = new System.Drawing.Point(8, 539);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(328, 42);
             this.panel1.TabIndex = 19;
@@ -1759,9 +1799,11 @@
             this.groupControl1.ResumeLayout(false);
             this.xtraScrollableControl1.ResumeLayout(false);
             this.xtraScrollableControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl7)).EndInit();
             this.groupControl7.ResumeLayout(false);
             this.groupControl7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit32.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit31.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit30.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit29.Properties)).EndInit();
@@ -1769,6 +1811,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit27.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit26.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit25.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl5)).EndInit();
             this.groupControl5.ResumeLayout(false);
             this.groupControl5.PerformLayout();
@@ -1798,26 +1841,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit17.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit18.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
             this.groupControl3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit9.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit8.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.checkEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit6.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit5.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit8.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit7.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit9.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit11.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit2.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit10.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
@@ -1892,10 +1933,37 @@
         private DevExpress.XtraEditors.CheckEdit checkEdit5;
         private DevExpress.XtraEditors.CheckEdit checkEdit4;
         private DevExpress.XtraEditors.CheckEdit checkEdit11;
+        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
+        private DevExpress.XtraEditors.CheckEdit checkEdit24;
+        private DevExpress.XtraEditors.SimpleButton simpleButton10;
+        private DevExpress.XtraEditors.SimpleButton simpleButton11;
+        private DevExpress.XtraEditors.GroupControl groupControl7;
+        private DevExpress.XtraEditors.CheckEdit checkEdit31;
+        private DevExpress.XtraEditors.CheckEdit checkEdit30;
+        private DevExpress.XtraEditors.CheckEdit checkEdit29;
+        private DevExpress.XtraEditors.CheckEdit checkEdit28;
+        private DevExpress.XtraEditors.CheckEdit checkEdit27;
+        private DevExpress.XtraEditors.CheckEdit checkEdit26;
+        private DevExpress.XtraEditors.CheckEdit checkEdit25;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private DevExpress.XtraEditors.LabelControl labelControl29;
+        private System.Windows.Forms.DateTimePicker dateTimePicker5;
+        private DevExpress.XtraEditors.LabelControl labelControl30;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private DevExpress.XtraEditors.LabelControl labelControl28;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private DevExpress.XtraEditors.LabelControl labelControl27;
+        private System.Windows.Forms.DateTimePicker dateTimePicker6;
+        private DevExpress.XtraEditors.LabelControl labelControl31;
+        private System.Windows.Forms.DateTimePicker dateTimePicker8;
+        private DevExpress.XtraEditors.LabelControl labelControl33;
+        private System.Windows.Forms.DateTimePicker dateTimePicker9;
+        private DevExpress.XtraEditors.LabelControl labelControl34;
+        private DevExpress.XtraEditors.CheckEdit checkEdit32;
+        private System.Windows.Forms.DateTimePicker dateTimePicker7;
+        private DevExpress.XtraEditors.LabelControl labelControl32;
         private DevExpress.XtraEditors.GroupControl groupControl5;
-        private DevExpress.XtraEditors.CheckEdit checkEdit17;
-        private DevExpress.XtraEditors.TextEdit textEdit18;
-        private DevExpress.XtraEditors.LabelControl labelControl20;
+        private DevExpress.XtraEditors.TextEdit textEdit12;
         private DevExpress.XtraEditors.CheckEdit checkEdit23;
         private DevExpress.XtraEditors.CheckEdit checkEdit16;
         private DevExpress.XtraEditors.LabelControl labelControl26;
@@ -1931,32 +1999,8 @@
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.CheckEdit checkEdit3;
         private DevExpress.XtraEditors.LabelControl labelControl14;
-        private DevExpress.XtraEditors.XtraScrollableControl xtraScrollableControl1;
-        private DevExpress.XtraEditors.CheckEdit checkEdit24;
-        private DevExpress.XtraEditors.SimpleButton simpleButton10;
-        private DevExpress.XtraEditors.SimpleButton simpleButton11;
-        private DevExpress.XtraEditors.TextEdit textEdit12;
-        private DevExpress.XtraEditors.GroupControl groupControl7;
-        private DevExpress.XtraEditors.CheckEdit checkEdit31;
-        private DevExpress.XtraEditors.CheckEdit checkEdit30;
-        private DevExpress.XtraEditors.CheckEdit checkEdit29;
-        private DevExpress.XtraEditors.CheckEdit checkEdit28;
-        private DevExpress.XtraEditors.CheckEdit checkEdit27;
-        private DevExpress.XtraEditors.CheckEdit checkEdit26;
-        private DevExpress.XtraEditors.CheckEdit checkEdit25;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private DevExpress.XtraEditors.LabelControl labelControl29;
-        private System.Windows.Forms.DateTimePicker dateTimePicker5;
-        private DevExpress.XtraEditors.LabelControl labelControl30;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-        private DevExpress.XtraEditors.LabelControl labelControl28;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private DevExpress.XtraEditors.LabelControl labelControl27;
-        private System.Windows.Forms.DateTimePicker dateTimePicker6;
-        private DevExpress.XtraEditors.LabelControl labelControl31;
-        private System.Windows.Forms.DateTimePicker dateTimePicker8;
-        private DevExpress.XtraEditors.LabelControl labelControl33;
-        private System.Windows.Forms.DateTimePicker dateTimePicker9;
-        private DevExpress.XtraEditors.LabelControl labelControl34;
+        private DevExpress.XtraEditors.CheckEdit checkEdit17;
+        private DevExpress.XtraEditors.TextEdit textEdit18;
+        private DevExpress.XtraEditors.LabelControl labelControl20;
     }
 }

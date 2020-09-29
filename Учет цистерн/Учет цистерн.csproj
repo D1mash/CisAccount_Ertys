@@ -553,6 +553,7 @@
     <EmbeddedResource Include="Forms\Услуги\СНО Реализация\SnoImplUpdateForm.resx">
       <DependentUpon>SnoImplUpdateForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
