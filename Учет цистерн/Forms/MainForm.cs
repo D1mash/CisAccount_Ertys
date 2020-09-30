@@ -6,7 +6,6 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Учет_цистерн.Forms.заявки_на_обработку;
-using Учет_цистерн.Forms.Отчеты;
 using Учет_цистерн.Forms.СНО;
 using Учет_цистерн.Forms.Справка;
 using Учет_цистерн.Forms.Услуги.СНО_Приход;
@@ -63,7 +62,7 @@ namespace Учет_цистерн
         {
             try
             {
-                string Reffresh = "exec dbo.GetFilter '"+UserID+"'";
+                string Reffresh = "exec dbo.GetFilter '" + UserID + "'";
                 gridControl1.DataSource = DbConnection.DBConnect(Reffresh); ;
                 gridView1.Columns[0].Visible = false;
             }
@@ -79,7 +78,7 @@ namespace Учет_цистерн
             try
             {
                 contextMenuStrip_Product.Show(button1, new Point(0, button1.Height));
-                if(role == "1")
+                if (role == "1")
                 {
                     contextMenuStrip_Product.Items[0].Enabled = true;
                     contextMenuStrip_Product.Items[1].Enabled = true;
@@ -89,7 +88,7 @@ namespace Учет_цистерн
                 }
                 else
                 {
-                    if(role == "2")
+                    if (role == "2")
                     {
                         contextMenuStrip_Product.Items[0].Enabled = true;
                         contextMenuStrip_Product.Items[1].Enabled = true;
@@ -119,7 +118,7 @@ namespace Учет_цистерн
         {
             try
             {
-                string Insert = "exec dbo.InsertGlobalFilter '"+UserID+"','" + Clipboard.GetText() + "'";
+                string Insert = "exec dbo.InsertGlobalFilter '" + UserID + "','" + Clipboard.GetText() + "'";
                 DbConnection.DBConnect(Insert);
                 GetFilter();
             }
@@ -155,7 +154,7 @@ namespace Учет_цистерн
                 {
                     aList.Add(row["ID"]);
                     Arrays = string.Join(" ", aList);
-                    string delete = "exec dbo.RemoveGlobalFilter '"+UserID+"','" + Arrays + "'";
+                    string delete = "exec dbo.RemoveGlobalFilter '" + UserID + "','" + Arrays + "'";
                     DbConnection.DBConnect(delete);
                 }
                 GetFilter();
@@ -176,7 +175,7 @@ namespace Учет_цистерн
         {
             try
             {
-                string DeleteAll = "delete from dbo.GlobalFilter where UserID = '"+UserID+"'";
+                string DeleteAll = "delete from dbo.GlobalFilter where UserID = '" + UserID + "'";
                 DbConnection.DBConnect(DeleteAll);
                 GetFilter();
             }
@@ -200,12 +199,12 @@ namespace Учет_цистерн
 
                 if (result == DialogResult.Yes)
                 {
-                    string Truncate = "exec dbo.Delete_Temp_MultiCar '"+UserID+"'";
+                    string Truncate = "exec dbo.Delete_Temp_MultiCar '" + UserID + "'";
                     DbConnection.DBConnect(Truncate);
 
-                    string UpdateAuditUser = "UPDATE AUDIT_USER SET DATE_OUT = GETDATE(), IS_DEAD = 1 WHERE ID_USER = '"+UserID+"' and (IS_DEAD IS NULL OR DATE_OUT IS NULL)";
+                    string UpdateAuditUser = "UPDATE AUDIT_USER SET DATE_OUT = GETDATE(), IS_DEAD = 1 WHERE ID_USER = '" + UserID + "' and (IS_DEAD IS NULL OR DATE_OUT IS NULL)";
                     DbConnection.DBConnect(UpdateAuditUser);
-                    
+
                     Environment.Exit(0);
                 }
                 else
@@ -265,7 +264,7 @@ namespace Учет_цистерн
                     }
                 }
 
-                StationForm frm = new StationForm(role,UserID);
+                StationForm frm = new StationForm(role, UserID);
                 tabControl1.Show();
                 TabPage StationTabPage = new TabPage("Станции");
                 tabControl1.TabPages.Add(StationTabPage);
@@ -381,14 +380,14 @@ namespace Учет_цистерн
             try
             {
                 contextMenuStrip_Services.Show(button2, new Point(0, button2.Height));
-                if(role == "1")
+                if (role == "1")
                 {
                     contextMenuStrip_Services.Items[0].Enabled = true;
                     contextMenuStrip_Services.Items[1].Enabled = false;
                 }
                 else
                 {
-                    if(role == "2")
+                    if (role == "2")
                     {
                         contextMenuStrip_Services.Items[0].Enabled = true;
                         contextMenuStrip_Services.Items[1].Enabled = false;
@@ -400,7 +399,7 @@ namespace Учет_цистерн
                     }
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 logger.Error(ex, "button2_Click_MainForm");
@@ -504,7 +503,7 @@ namespace Учет_цистерн
             for (int index = 0; index <= tabControl1.TabCount - 1; index++)
             {
                 if (tabControl1.GetTabRect(index).Contains(tabControl1.PointToClient(Cursor.Position)))
-                return tabControl1.TabPages[index];
+                    return tabControl1.TabPages[index];
             }
             return null;
         }
@@ -530,7 +529,7 @@ namespace Учет_цистерн
         {
             try
             {
-                
+
                 foreach (Form form in Application.OpenForms)
                 {
                     if (form.GetType() == typeof(ReportForm))
@@ -701,28 +700,6 @@ namespace Учет_цистерн
             }
         }
 
-        private void сНОToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                foreach (Form form in Application.OpenForms)
-                {
-                    if (form.GetType() == typeof(SnoReportForm))
-                    {
-                        form.Activate();
-                        return;
-                    }
-                }
-                SnoReportForm snoReporForm = new SnoReportForm();
-                snoReporForm.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                logger.Error(ex, "сНОToolStripMenuItem1_Click");
-            }
-        }
-
         private void проверитьОбновлениеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -766,7 +743,7 @@ namespace Учет_цистерн
             try
             {
                 contextMenuStrip_Refrence.Show(btn_Refrence, new Point(0, button2.Height));
-                if(role == "1002")
+                if (role == "1002")
                 {
                     contextMenuStrip_Refrence.Items[0].Enabled = true;
                     contextMenuStrip_Refrence.Items[1].Enabled = true;
@@ -791,32 +768,10 @@ namespace Учет_цистерн
                     }
                 }
             }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                logger.Error(ex, "btn_Refrence_Click_MainForm");
-            }
-        }
-
-        private void аУТНToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                foreach (Form form in Application.OpenForms)
-                {
-                    if (form.GetType() == typeof(AUTNReportForm))
-                    {
-                        form.Activate();
-                        return;
-                    }
-                }
-                AUTNReportForm aUTNReportForm = new AUTNReportForm();
-                aUTNReportForm.Show();
-            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                logger.Error(ex, " аУТНToolStripMenuItem_Click_MainForm");
+                logger.Error(ex, "btn_Refrence_Click_MainForm");
             }
         }
 
@@ -888,7 +843,7 @@ namespace Учет_цистерн
                     contextMenuStrip_Rent_Car.Items[1].Enabled = true;
                 }
             }
-            }
+        }
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -901,7 +856,7 @@ namespace Учет_цистерн
                 }
             }
 
-            Journal journalForm = new Journal(role,UserID);
+            Journal journalForm = new Journal(role, UserID);
             tabControl1.Show();
             TabPage JournalPage = new TabPage("Журнал обработанных вагонов");
             tabControl1.TabPages.Add(JournalPage);
@@ -950,7 +905,7 @@ namespace Учет_цистерн
                 }
             }
 
-            Rent_Brodcast_Car rent_Brodcast_Car = new Rent_Brodcast_Car(this.tabControl1,role, UserID);
+            Rent_Brodcast_Car rent_Brodcast_Car = new Rent_Brodcast_Car(this.tabControl1, role, UserID);
             tabControl1.Show();
             TabPage chg_tabPage = new TabPage("Заявка на передачу в/ц");
             tabControl1.TabPages.Add(chg_tabPage);
