@@ -21,7 +21,7 @@ namespace Учет_цистерн.Forms.Отчеты
             {
                 sl.SelectWorksheet("Итоговая  справка");
 
-                sl.SetCellValue("B6", "c " + date_1 + " по " + date_2 + "на ТОО \"Batys Petroleum\"");
+                sl.SetCellValue("B6", "c " + date_1 + " по " + date_2 + "на ТОО \"Ертыс Сервис\"");
 
                 var val = dt.Rows.Count * 2 + 11;
                 sl.CopyCell("B13", "H24", "B" + val, true);
@@ -132,33 +132,31 @@ namespace Учет_цистерн.Forms.Отчеты
 
                 sl.SetCellValue("F10", company_name);
 
-                sl.SetCellValue("F12", "в ТОО \"Batys Petroleum\"" + dates_1 + " по " + dates_2);
+                sl.SetCellValue("F12", "в ТОО \"Ертыс Сервис\"" + dates_1 + " по " + dates_2);
 
-                var val = dataTable.Rows.Count + 24 + Itog_Rep.Rows.Count;
+                var val = dataTable.Rows.Count + 18;
                 sl.CopyCell("B18", "G24", "B" + val, true);
 
                 sl.ImportDataTable(16, 1, dataTable, false);
-                sl.CopyCell("W16", "W" + Convert.ToString(dataTable.Rows.Count + 16), "X16", true);
+                sl.CopyCell("Z16", "Z" + Convert.ToString(dataTable.Rows.Count + 16), "AA16", true);
+
 
                 for (int i = 0; i < dataTable.Rows.Count; i++)
                 {
                     for (int j = 1; j <= dataTable.Columns.Count + 1; j++)
                     {
                         sl.SetCellStyle(i + 16, j, GR.FormattingExcelCells(sl, true));
+                        if (j == 13 | j == 14 | j == 17 | j == 23 | j == 24)
+                        {
+                            SLStyle style = sl.CreateStyle();
+                            style.FormatCode = "yyyy/mm/dd hh:mm:ss";
+                            sl.SetColumnStyle(j, style);
+                        }
                     }
                 }
 
-                sl.SetCellValue(dataTable.Rows.Count + 19, 2, "=F12");
-                sl.SetCellStyle(dataTable.Rows.Count + 19, 2, GR.FormattingExcelCells(sl, false));
-
-                sl.SetCellValue(dataTable.Rows.Count + 20, 2, "Всего обработано вагонов - цистерн " + company_name + " по видам операций:");
-                sl.SetCellStyle(dataTable.Rows.Count + 20, 2, GR.FormattingExcelCells(sl, false));
-
-                //Итоговая сводка
-                int rowcount = 0;
-                int total = 0;
                 double EndSum = 0;
-
+                int rowcount = 0;
                 for (int i = 0; i < Itog_Rep.Rows.Count; i++)
                 {
                     rowcount++;
@@ -167,21 +165,18 @@ namespace Учет_цистерн.Forms.Отчеты
                     {
                         if (j == 0)
                         {
-                            sl.SetCellValue(i + dataTable.Rows.Count + 21 + rowcount, j + 2, Itog_Rep.Rows[i][j].ToString());
-                            sl.SetCellStyle(i + dataTable.Rows.Count + 21 + rowcount, j + 2, GR.FormattingExcelCells(sl, false));
+                            sl.SetCellValue(i + dataTable.Rows.Count + 19 + rowcount, j + 2, Itog_Rep.Rows[i][j].ToString());
+                            sl.SetCellStyle(i + dataTable.Rows.Count + 19 + rowcount, j + 2, GR.FormattingExcelCells(sl, false));
                         }
                         else
                         {
                             val1 = val1 * double.Parse(Itog_Rep.Rows[i][j].ToString());
-                            sl.SetCellValue(i + dataTable.Rows.Count + 21 + rowcount, j + 12, Convert.ToDecimal(Itog_Rep.Rows[i][j].ToString()));
-                            sl.SetCellStyle(i + dataTable.Rows.Count + 21 + rowcount, j + 12, GR.FormattingExcelCells(sl, false));
+                            sl.SetCellValue(i + dataTable.Rows.Count + 19 + rowcount, j + 10, Convert.ToDecimal(Itog_Rep.Rows[i][j].ToString()));
+                            sl.SetCellStyle(i + dataTable.Rows.Count + 19 + rowcount, j + 10, GR.FormattingExcelCells(sl, false));
                         }
                     }
                     EndSum += val1;
                 }
-
-                sl.SetCellValue(dataTable.Rows.Count + 20, 12, dataTable.Rows.Count);
-                sl.SetCellStyle(dataTable.Rows.Count + 20, 12, GR.FormattingExcelCells(sl, false));
 
                 //Итоговая сумма
                 sl.SetCellValue(val, 4, EndSum);

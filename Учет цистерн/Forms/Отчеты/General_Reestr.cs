@@ -48,6 +48,9 @@ namespace Учет_цистерн.Forms.Отчеты
                         string RefreshAll = "exec dbo.GetReportAllRenderedService_v1 '" + v1 + "','" + v2 + "'," + "@Type = " + 1;
                         dataTable = DbConnection.DBConnect(RefreshAll);
 
+                        string GetCountServiceCost = "exec dbo.Itog_All_Report '" + v1 + "','" + v2 + "'";
+                        Itog_Rep = DbConnection.DBConnect(GetCountServiceCost);
+
                         sl.SelectWorksheet(name);
                         sl.SetCellValue("F12", "в ТОО \"Ертыс сервис\" " + v1 + " по " + v2);
 
@@ -56,26 +59,42 @@ namespace Учет_цистерн.Forms.Отчеты
 
                         sl.ImportDataTable(16, 1, dataTable, false);
                         sl.CopyCell("Z16", "Z" + Convert.ToString(dataTable.Rows.Count + 16), "AA16", true);
-
-                        double EndSum = 0;
-
+                        
                         for (int i = 0; i < dataTable.Rows.Count; i++)
                         {
                             for (int j = 1; j <= dataTable.Columns.Count+1; j++)
                             {
                                 sl.SetCellStyle(i + 16, j, FormattingExcelCells(sl, true));
-                                if (j > 24 && j<26)
-                                    EndSum += Convert.ToDouble(dataTable.Rows[i][j].ToString());
-                                else
+                                if (j == 13 | j == 14 | j == 17 | j == 23 | j == 24)
                                 {
-                                    if(j==13 | j==14 | j==17 | j==23 | j == 24)
-                                    {
-                                        SLStyle style = sl.CreateStyle();
-                                        style.FormatCode = "yyyy/mm/dd hh:mm:ss";
-                                        sl.SetColumnStyle(j, style);
-                                    }
+                                    SLStyle style = sl.CreateStyle();
+                                    style.FormatCode = "yyyy/mm/dd hh:mm:ss";
+                                    sl.SetColumnStyle(j, style);
                                 }
                             }
+                        }
+
+                        double EndSum = 0;
+                        int rowcount = 0;
+                        for (int i = 0; i < Itog_Rep.Rows.Count; i++)
+                        {
+                            rowcount++;
+                            double val1 = 1;
+                            for (int j = 0; j < Itog_Rep.Columns.Count; j++)
+                            {
+                                if (j == 0)
+                                {
+                                    sl.SetCellValue(i + dataTable.Rows.Count + 19 + rowcount, j + 2, Itog_Rep.Rows[i][j].ToString());
+                                    sl.SetCellStyle(i + dataTable.Rows.Count + 19 + rowcount, j + 2, FormattingExcelCells(sl, false));
+                                }
+                                else
+                                {
+                                    val1 = val1 * double.Parse(Itog_Rep.Rows[i][j].ToString());
+                                    sl.SetCellValue(i + dataTable.Rows.Count + 19 + rowcount, j + 10, Convert.ToDecimal(Itog_Rep.Rows[i][j].ToString()));
+                                    sl.SetCellStyle(i + dataTable.Rows.Count + 19 + rowcount, j + 10, FormattingExcelCells(sl, false));
+                                }
+                            }
+                            EndSum += val1;
                         }
 
                         //Итоговая сумма
@@ -106,26 +125,43 @@ namespace Учет_цистерн.Forms.Отчеты
 
                         sl.ImportDataTable(16, 1, dataTable, false);
                         sl.CopyCell("Z16", "Z" + Convert.ToString(dataTable.Rows.Count + 16), "AA16", true);
-
-                        double EndSum = 0;
+                        
 
                         for (int i = 0; i < dataTable.Rows.Count; i++)
                         {
                             for (int j = 1; j <= dataTable.Columns.Count + 1; j++)
                             {
                                 sl.SetCellStyle(i + 16, j, FormattingExcelCells(sl, true));
-                                if (j > 24 && j < 26)
-                                    EndSum += Convert.ToDouble(dataTable.Rows[i][j].ToString());
-                                else
+                                if (j == 13 | j == 14 | j == 17 | j == 23 | j == 24)
                                 {
-                                    if (j == 13 | j == 14 | j == 17 | j == 23 | j == 24)
-                                    {
-                                        SLStyle style = sl.CreateStyle();
-                                        style.FormatCode = "yyyy/mm/dd hh:mm:ss";
-                                        sl.SetColumnStyle(j, style);
-                                    }
+                                    SLStyle style = sl.CreateStyle();
+                                    style.FormatCode = "yyyy/mm/dd hh:mm:ss";
+                                    sl.SetColumnStyle(j, style);
                                 }
                             }
+                        }
+
+                        double EndSum = 0;
+                        int rowcount = 0;
+                        for (int i = 0; i < Itog_Rep.Rows.Count; i++)
+                        {
+                            rowcount++;
+                            double val1 = 1;
+                            for (int j = 0; j < Itog_Rep.Columns.Count; j++)
+                            {
+                                if (j == 0)
+                                {
+                                    sl.SetCellValue(i + dataTable.Rows.Count + 19 + rowcount, j + 2, Itog_Rep.Rows[i][j].ToString());
+                                    sl.SetCellStyle(i + dataTable.Rows.Count + 19 + rowcount, j + 2, FormattingExcelCells(sl, false));
+                                }
+                                else
+                                {
+                                    val1 = val1 * double.Parse(Itog_Rep.Rows[i][j].ToString());
+                                    sl.SetCellValue(i + dataTable.Rows.Count + 19 + rowcount, j + 10, Convert.ToDecimal(Itog_Rep.Rows[i][j].ToString()));
+                                    sl.SetCellStyle(i + dataTable.Rows.Count + 19 + rowcount, j + 10, FormattingExcelCells(sl, false));
+                                }
+                            }
+                            EndSum += val1;
                         }
 
                         //Итоговая сумма
