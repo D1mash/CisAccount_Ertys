@@ -1,12 +1,8 @@
 ﻿using DocumentFormat.OpenXml.Spreadsheet;
 using SpreadsheetLight;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Учет_цистерн.Forms.Отчеты
 {
@@ -21,7 +17,6 @@ namespace Учет_цистерн.Forms.Отчеты
 
             using (SLDocument sl = new SLDocument(path))
             {
-
                 sl.SelectWorksheet("Batys");
                 sl.RenameWorksheet("Batys", "Реестр");
                 sl.AddWorksheet("Temp");
@@ -54,13 +49,13 @@ namespace Учет_цистерн.Forms.Отчеты
                         dataTable = DbConnection.DBConnect(RefreshAll);
 
                         sl.SelectWorksheet(name);
-                        sl.SetCellValue("F12", "в ТОО \"Batys Petroleum\" " + v1 + " по " + v2);
+                        sl.SetCellValue("F12", "в ТОО \"Ертыс сервис\" " + v1 + " по " + v2);
 
                         var val = dataTable.Rows.Count + 18;
                         sl.CopyCell("B18", "G24", "B" + val, true);
 
                         sl.ImportDataTable(16, 1, dataTable, false);
-                        sl.CopyCell("W16", "W" + Convert.ToString(dataTable.Rows.Count + 16), "X16", true);
+                        sl.CopyCell("Z16", "Z" + Convert.ToString(dataTable.Rows.Count + 16), "AA16", true);
 
                         double EndSum = 0;
 
@@ -69,11 +64,20 @@ namespace Учет_цистерн.Forms.Отчеты
                             for (int j = 1; j <= dataTable.Columns.Count+1; j++)
                             {
                                 sl.SetCellStyle(i + 16, j, FormattingExcelCells(sl, true));
-                                if (j >= 21 && j<23)
+                                if (j > 24 && j<26)
                                     EndSum += Convert.ToDouble(dataTable.Rows[i][j].ToString());
+                                else
+                                {
+                                    if(j==13 | j==14 | j==17 | j==23 | j == 24)
+                                    {
+                                        SLStyle style = sl.CreateStyle();
+                                        style.FormatCode = "yyyy/mm/dd hh:mm:ss";
+                                        sl.SetColumnStyle(j, style);
+                                    }
+                                }
                             }
                         }
-                        
+
                         //Итоговая сумма
                         sl.SetCellValue(val, 4, EndSum);
                         sl.SetCellStyle(val, 4, FormattingExcelCells(sl, false));
@@ -95,13 +99,13 @@ namespace Учет_цистерн.Forms.Отчеты
 
                         sl.SetCellValue("F10", dt.Rows[k][1].ToString());
 
-                        sl.SetCellValue("F12", "в ТОО \"Batys Petroleum\"" + v1 + " по " + v2);
+                        sl.SetCellValue("F12", "в ТОО \"Ертыс Сервис\"" + v1 + " по " + v2);
 
                         var val = dataTable.Rows.Count + 18;
                         sl.CopyCell("B18", "G24", "B" + val, true);
 
                         sl.ImportDataTable(16, 1, dataTable, false);
-                        sl.CopyCell("W16", "W" + Convert.ToString(dataTable.Rows.Count + 16), "X16", true);
+                        sl.CopyCell("Z16", "Z" + Convert.ToString(dataTable.Rows.Count + 16), "AA16", true);
 
                         double EndSum = 0;
 
@@ -110,8 +114,17 @@ namespace Учет_цистерн.Forms.Отчеты
                             for (int j = 1; j <= dataTable.Columns.Count + 1; j++)
                             {
                                 sl.SetCellStyle(i + 16, j, FormattingExcelCells(sl, true));
-                                if (j >= 21 && j < 23)
+                                if (j > 24 && j < 26)
                                     EndSum += Convert.ToDouble(dataTable.Rows[i][j].ToString());
+                                else
+                                {
+                                    if (j == 13 | j == 14 | j == 17 | j == 23 | j == 24)
+                                    {
+                                        SLStyle style = sl.CreateStyle();
+                                        style.FormatCode = "yyyy/mm/dd hh:mm:ss";
+                                        sl.SetColumnStyle(j, style);
+                                    }
+                                }
                             }
                         }
 
