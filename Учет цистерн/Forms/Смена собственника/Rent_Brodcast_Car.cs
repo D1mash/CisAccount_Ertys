@@ -252,7 +252,9 @@ namespace Учет_цистерн.Forms.Смена_собственника
 
                         string Search_1 = "exec dbo.Rent_Search_By_Parametrs_2 " + "@Car_Num = '" + textEdit1.Text.Trim() + "', " + "@Type = " + 2;
                         gridControl3.DataSource = DbConnection.DBConnect(Search_1);
-                        gridView3.Columns[0].Visible = false;
+                        gridView1.Columns[0].Visible = false;
+                        gridView1.Columns[6].Visible = false;
+                        gridView1.Columns[7].Visible = false;
 
                         if (gridView3.RowCount > 0)
                         {
