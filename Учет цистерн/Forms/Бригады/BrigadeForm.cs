@@ -107,7 +107,7 @@ namespace Учет_цистерн
         {
             try
             {
-                string Reffresh = "SELECT ID,Name,Surname,Lastname,FIO FROM [Batys].[dbo].[d__Brigade]";
+                string Reffresh = "SELECT ID,Name,Surname,Lastname,FIO FROM [dbo].[d__Brigade]";
                 DataTable dataTable = new DataTable();
                 dataTable = DbConnection.DBConnect(Reffresh);
                 gridControl1.DataSource = dataTable;

@@ -49,7 +49,7 @@ namespace Учет_цистерн
                     }
                 }
 
-                string Reffresh = "SELECT ID,Name,FullName FROM [Batys].[dbo].[d__Owner]";
+                string Reffresh = "SELECT ID,Name,FullName FROM [dbo].[d__Owner]";
                 DataTable dataTable = new DataTable();
                 dataTable = DbConnection.DBConnect(Reffresh);
                 gridControl1.DataSource = dataTable;
